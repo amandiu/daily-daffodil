@@ -1,0 +1,36 @@
+.cnt{
+    width:350px;
+    height:250px;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center90;
+    flex-wrap: wrap; 
+
+}
+.cnt-2{
+    width: 350px;
+    height:fit-content;
+    background-color: burlywood;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.cnt-2 h1{
+    margin: 5px 5px ;
+
+}
+.cnt-3{
+    width: 350px;
+    height: 200px;
+    background-color: rgb(63, 60, 57);
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
