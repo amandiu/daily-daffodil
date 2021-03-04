@@ -1,0 +1,25 @@
+.theme1 {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.theme {
+    position: absolute;
+    top: 16.2vh;
+    right: 1px;
+    width: 150px;
+    height: 100px;
+    background: #334FDE;
+    border-radius: 3px;
+}
+
+@media(max-width: 550px) {
+    .theme {
+        top: 12.2vh;
+    }
+}

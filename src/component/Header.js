@@ -1,9 +1,9 @@
 import React from 'react'
-import { BiSearchAlt2 } from 'react-icons/bi';
 import './Header.css';
 import { FaBars } from 'react-icons/fa';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import {Show} from './small_component/Navigation'
+import {ShowTheme} from './small_component/Theme'
 
 
 function Header() {
@@ -20,11 +20,14 @@ function Header() {
             <h2>News</h2>
        </div>
        <div className = 'h-h3' >
-        <BiSearchAlt2 className = 'bar' > </BiSearchAlt2>
+        
        </div>
         <div className = 'h-h4' >
-           <BsThreeDotsVertical className = 'bar' > </BsThreeDotsVertical>
+           <BsThreeDotsVertical className = 'bar' onClick={ShowTheme}> </BsThreeDotsVertical>
         </div>
+
+
+
       </div>  
         <div className ='h2'>
           <div className = 'h2-h1' >
@@ -40,6 +43,7 @@ function Header() {
           <p> Live </p> 
         </div>
         </div>
+
   </div>
   )
 }
