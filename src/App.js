@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <div className="body">
-  
+        
       </div>
       <Footer></Footer>
       <Alert display='none' head='Alert' text='Your profile is hacked.'></Alert>
