@@ -1,0 +1,32 @@
+.footer{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.315);
+}
+.f{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+   
+
+}
+.f:hover{
+    background: black;
+    color: white;
+}
+.f2{
+    height:90%;
+    width: 14%;
+}
+
+
+@media(max-width: 550px){
+    .footer{
+        height: 6vh;
+    }
+}
