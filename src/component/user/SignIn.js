@@ -4,7 +4,8 @@ function SignIn (props){
 
     return(
         <div className='sign-in' style={{display: props.display}}>
-            <h1>Sazzad</h1>  
+            <h1>Sazzad</h1> 
+            <h1>Aman</h1> 
         </div>
     );
 }
