@@ -11,13 +11,13 @@ import Navigation from './component/small_component/Navigation'
 import Theme from './component/small_component/Theme'
 import SearchBar from './component/small_component/SearchBar'
 function App() { 
- // var v="Convert any RGB value to its Hex color code, along with corresponding HSL, HSV and CMYK values (including HTML/CSS values). Convert any RGB value to its Hex color code, along with corresponding HSL, ";
+
   //card has head,user,viewer,img,time
   return (
     <div className="App">
       <Header></Header>
       <div className="body">
-
+        
       </div>
       <Footer></Footer>
       <SearchBar></SearchBar>

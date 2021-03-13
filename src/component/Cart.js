@@ -29,6 +29,6 @@ const Cart=(props)=>{
                 </div>
             </div>
         </div>
-    )
+    ) 
 }
 export default Cart
