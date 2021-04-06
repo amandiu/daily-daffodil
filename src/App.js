@@ -3,6 +3,7 @@ import './App.css';
 import Header from './component/Header'
 import Footer from './component/Footer'
 import Cart from './component/Cart'
+import CartView from './component/CartView'
 import Contact from'./component/Contact'
 import Profile from './component/Profile'
 import Loader from './component/Loader'
@@ -17,7 +18,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <div className="body">
-        
+        <CartView></CartView>
       </div>
       <Footer></Footer>
       <SearchBar></SearchBar>
