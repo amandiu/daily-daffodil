@@ -6,9 +6,9 @@ import {Show} from './small_component/Navigation'
 import {ShowTheme} from './small_component/Theme'
 
 
-function Header() {
+function Header(props) {
     return ( 
-    <div className = 'header'>
+    <div className = 'header' style={{background:props.color}}>
       <div className = 'h1'>
         <div className = 'h-h1'>
           <FaBars className = 'bar' onClick={Show}></FaBars>
@@ -16,12 +16,12 @@ function Header() {
        <div className = 'h-h2' >
         <p style={{ color: '#34EA27' }}>D</p> 
             <p style={{color: '#465CEB' }}>I</p> 
-            <p>U</p> 
+            <p style={{color: 'black' }}>U</p> 
             <h2>News</h2>
        </div>
        <div className = 'h-h3' >
         
-       </div>
+       </div> 
         <div className = 'h-h4' >
            <BsThreeDotsVertical className = 'bar' onClick={ShowTheme}> </BsThreeDotsVertical>
         </div>
@@ -43,7 +43,6 @@ function Header() {
           <p> Live </p> 
         </div>
         </div>
-
   </div>
   )
 }

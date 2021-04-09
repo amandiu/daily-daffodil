@@ -1,0 +1,63 @@
+.signin {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.308);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.bx1 {
+    width: 320px;
+    height: 400px;
+    background-image: url('./../../file/1593371397_1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.bx2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.479);
+    border-radius: 5px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.bx {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.767);
+    border-radius: 5px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.bx input {
+    width: 70%;
+    height: 23px;
+    outline: none;
+    background: none;
+    border: none;
+    margin-left: 5px;
+}
+
+.bx2 input {
+    border-radius: 3px;
+    outline: none;
+    margin: 10px 10px;
+}

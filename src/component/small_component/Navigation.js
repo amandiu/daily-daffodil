@@ -2,6 +2,7 @@ import React from 'react'
 import './Navigation.css'
 import {AiOutlineClose} from 'react-icons/ai'
 import OutsideClickHandler from 'react-outside-click-handler';
+import Menus from './Menus'
 
 
 function Hide(key){
@@ -10,7 +11,7 @@ function Hide(key){
 export function Show(){
     document.getElementById('cc').style.display='initial'; 
 }
-function Navigation() {
+function Navigation(props) {
 
     return ( 
     <div className = 'nav' id='cc'>
@@ -19,6 +20,9 @@ function Navigation() {
         }}>
         <div className ='nav1'>
             <AiOutlineClose className='icon' onClick={Hide.bind(this,'cc')}></AiOutlineClose>
+            <div className='menus'>
+                <Menus login={props.login}></Menus>
+            </div>
         </div>
     </OutsideClickHandler>
         

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './component/Header'
 import Footer from './component/Footer'
@@ -11,20 +11,28 @@ import Alert from "./component/Alert";
 import Navigation from './component/small_component/Navigation'
 import Theme from './component/small_component/Theme'
 import SearchBar from './component/small_component/SearchBar'
+import SignIn from './component/user/SignIn'
+
+
+var themeColor='red';
+
 function App() { 
 
   //card has head,user,viewer,img,time
   return (
     <div className="App">
-      <Header></Header>
+      <Header color={themeColor}></Header>
       <div className="body">
-        <CartView></CartView>
+        
+
       </div>
       <Footer></Footer>
       <SearchBar></SearchBar>
-      <Navigation></Navigation>
+      <Navigation login='true'></Navigation>
       <Theme></Theme>
+      <SignIn display='none'></SignIn>
       <Alert display='none' head='Alert' text='Your profile is hacked.'></Alert>
+      <Loader display='none'></Loader>
     </div>
   );
 }
