@@ -12,6 +12,7 @@ import Navigation from './component/small_component/Navigation'
 import Theme from './component/small_component/Theme'
 import SearchBar from './component/small_component/SearchBar'
 import SignIn from './component/user/SignIn'
+import AddNews from './component/user/AddNews'
 
 
 var themeColor='red';
@@ -23,8 +24,7 @@ function App() {
     <div className="App">
       <Header color={themeColor}></Header>
       <div className="body">
-        
-
+        <AddNews></AddNews>
       </div>
       <Footer></Footer>
       <SearchBar></SearchBar>
