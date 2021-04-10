@@ -56,6 +56,16 @@ i {
     align-items: center;
 }
 
+a {
+    display: block;
+    margin: 8px 5px;
+    text-decoration: none;
+    color: honeydew;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
 .i {
     width: 20px;
     height: 20px;

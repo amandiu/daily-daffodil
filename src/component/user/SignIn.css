@@ -1,8 +1,6 @@
 .signin {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.308);
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

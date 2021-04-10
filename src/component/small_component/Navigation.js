@@ -18,7 +18,7 @@ function Navigation(props) {
         <OutsideClickHandler onOutsideClick={()=>{
             Hide("cc");
         }}>
-        <div className ='nav1'>
+        <div className ='nav1' style={{background: props.color}}>
             <AiOutlineClose className='icon' onClick={Hide.bind(this,'cc')}></AiOutlineClose>
             <div className='menus'>
                 <Menus login={props.login}></Menus>

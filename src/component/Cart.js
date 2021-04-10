@@ -13,7 +13,7 @@ const Cart=(props)=>{
             </div>
             <div className="cart-2">
                 <div className="cart-3">
-                    <p>{props.head}</p>
+                    <p>{props.head}</p> 
                 </div>
                 <div className="cart-4">
                     <div className="cart-5" style={{color: a}}>

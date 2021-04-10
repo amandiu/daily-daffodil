@@ -1,4 +1,3 @@
-
 import './App.css';
 import Header from './component/Header'
 import Footer from './component/Footer'
@@ -13,24 +12,96 @@ import Theme from './component/small_component/Theme'
 import SearchBar from './component/small_component/SearchBar'
 import SignIn from './component/user/SignIn'
 import AddNews from './component/user/AddNews'
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import React, {useEffect, useState} from 'react'
+import Axios from 'axios'
 
 
-var themeColor='red';
+var themeColor='blue';
 
+
+function vn(){
+  alert()
+}
 function App() { 
+
+  var [post, setPost]=useState(null)
+  var [inputt, setInput]=useState(null)
+  useEffect(() => {
+    var getPost=async()=>{
+      await Axios({
+        method: "GET",
+        url: "http://127.0.0.1:8000/"
+      }).then(response=>{
+        console.log(response.data);
+        setPost(response.data);
+      })
+    }
+    getPost()
+  }, [])
 
   //card has head,user,viewer,img,time
   return (
     <div className="App">
       <Header color={themeColor}></Header>
-      <div className="body">
-        <AddNews></AddNews>
-      </div>
+
+
+        <Router>
+          <Switch>
+            <Route path='/view'>
+              <CartView></CartView>
+            </Route>
+            <Route path='/search'>
+              <div className='body'></div>
+            </Route>
+            <Route path='/addnews'>
+              <div className='body'>
+              <AddNews></AddNews>
+              </div>
+            </Route>
+            <Route path='/login'>
+              <div className='body'>
+              <SignIn display='flex'></SignIn>
+              </div>
+            </Route>
+            <Route path='/video'>
+              <div className='body'>
+                <h4>Upcomming...</h4>
+              </div>
+            </Route>
+            <Route path='/popular'>
+            <div className='body'>
+                <h4>Upcomming...</h4>
+              </div>
+            </Route>
+            <Route path='/live'>
+              <div className='body'>
+                <h4>Upcomming...</h4>
+              </div>
+            </Route>
+            <Route path='/'>
+              {
+                post!==null ? (
+                  <div className='body'>
+                    {
+                    post.map(data=>(
+                      <Cart head={data.HeadLine} viwer={data.Viwer} time={data.Date} user={data.Admin}></Cart>
+                    ))
+                  }
+                  </div>
+                ) :(<div className='body'>
+                  <h4>No Data Avaible</h4>
+                </div>)
+              }
+            </Route>
+          </Switch>
+        </Router>
+
+
       <Footer></Footer>
       <SearchBar></SearchBar>
-      <Navigation login='true'></Navigation>
+      <Navigation login='false' color={themeColor}></Navigation>
       <Theme></Theme>
-      <SignIn display='none'></SignIn>
       <Alert display='none' head='Alert' text='Your profile is hacked.'></Alert>
       <Loader display='none'></Loader>
     </div>

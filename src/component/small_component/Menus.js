@@ -17,7 +17,7 @@ function Menus(props) {
         </div>
         <div className='cart2'>
          <i ><CgProfile className='i'></CgProfile> Profile</i>
-         <i ><BiAddToQueue className='i'></BiAddToQueue>Add News</i>
+         <a href='/addnews'><BiAddToQueue className='i'></BiAddToQueue>Add News</a>
          <i ><AiOutlineLogout className='i'></AiOutlineLogout>LogOut</i>
         </div>
      </div>
@@ -27,7 +27,7 @@ function Menus(props) {
         <div className='logout'>
             <div className='cartt' style={{background: 'none'}}>
             <p>Only DIU family members are can sign up here. Please signup and post new news.</p>
-            <i onClick={Show}><AiOutlineLogout className='i'></AiOutlineLogout>LogIn</i>
+            <a href='/login'><AiOutlineLogout className='i'></AiOutlineLogout>LogIn</a>
             </div>
         </div>
        )

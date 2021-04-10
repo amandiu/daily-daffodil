@@ -14,7 +14,7 @@ export function Show() {
 function name() {
     
 var email=document.getElementById('email').value;
-var x=document.getElementById('x');
+var x=document.getElementById('email1');
 var em='',j=0;
 for(var i=0;i<email.length;i++){
     if(email[i]==='@'){
@@ -82,9 +82,6 @@ function SignIn (props){
 
     return(
         <div className='signin' style={{display: props.display}} id='signin'>
-            <OutsideClickHandler onOutsideClick={()=>{
-                Close('signin');
-            }}>
                 <div className='bx1'>
                 <form>
                 <div className='bx2'>
@@ -92,7 +89,7 @@ function SignIn (props){
                 </div>
                 <div className='bx' id='name1'>
                     <CgProfile></CgProfile>
-                    <input type='text' placeholder='Name.....'  id='name' onChange={name} onKeyDown={handleEnter}></input>
+                    <input type='text' placeholder='Name.....'  id='name' onKeyDown={handleEnter}></input>
                 </div>
                 <div className='bx' id='email1'>
                     <AiOutlineMail></AiOutlineMail>
@@ -114,7 +111,6 @@ function SignIn (props){
                     <input type='submit' value='Log In' onClick={LogIn}></input>
                 </div>
             </div>
-            </OutsideClickHandler>
         </div>
     ); 
 }

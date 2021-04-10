@@ -4,6 +4,9 @@ import { FaBars } from 'react-icons/fa';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import {Show} from './small_component/Navigation'
 import {ShowTheme} from './small_component/Theme'
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+
+
 
 
 function Header(props) {
@@ -25,22 +28,20 @@ function Header(props) {
         <div className = 'h-h4' >
            <BsThreeDotsVertical className = 'bar' onClick={ShowTheme}> </BsThreeDotsVertical>
         </div>
-
-
-
+        
       </div>  
         <div className ='h2'>
-          <div className = 'h2-h1' >
-            <p> Top Stories </p>
+          <div className = 'h2-h1'>
+            <a href='/'> Top Stories </a>
           </div> 
-        <div className = 'h2-h1' >
-          <p> Popular </p> 
+        <div className = 'h2-h1'>
+          <a href='/popular'> Popular </a>
         </div> 
         <div className = 'h2-h1' >
-          <p> Video </p>
+          <a href='/video'> Video </a>
         </div>
         <div className = 'h2-h1' >
-          <p> Live </p> 
+          <a href='/live'> Live </a> 
         </div>
         </div>
   </div>
