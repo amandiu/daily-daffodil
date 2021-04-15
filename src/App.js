@@ -19,14 +19,11 @@ import Axios from 'axios'
 
 var themeColor='blue';
 
-
-function vn(){
-  alert()
-}
 function App() { 
 
   var [post, setPost]=useState(null)
   var [inputt, setInput]=useState(null)
+  var [data, setData]=useState(null)
   useEffect(() => {
     var getPost=async()=>{
       await Axios({
@@ -79,13 +76,18 @@ function App() {
                 <h4>Upcomming...</h4>
               </div>
             </Route>
+            <Route path='/details'>
+              <div className='body'>
+              <CartView data={data}></CartView>
+              </div>
+            </Route>
             <Route path='/'>
               {
                 post!==null ? (
                   <div className='body'>
                     {
-                    post.map(data=>(
-                      <Cart head={data.HeadLine} viwer={data.Viwer} time={data.Date} user={data.Admin}></Cart>
+                    post.map((data,i)=>(
+                      <Link to='/details' onClick={() => setData(data)}><Cart data={data} key={i}></Cart></Link>
                     ))
                   }
                   </div>
