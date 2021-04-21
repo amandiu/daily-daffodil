@@ -13,9 +13,9 @@ export function Show() {
 }
 function name() {
     
-var email=document.getElementById('email').value;
-var x=document.getElementById('email1');
-var em='',j=0;
+const email=document.getElementById('email').value;
+const x=document.getElementById('email1');
+const em='',j=0;
 for(var i=0;i<email.length;i++){
     if(email[i]==='@'){
         j=i;
@@ -24,6 +24,7 @@ for(var i=0;i<email.length;i++){
 for(i=j;i<email.length;i++){
 em=em+email[i];
 }
+
 //alert(em.toString());
 if(em==='@diu.edu.bd'){
     x.style.border='1px solid green';
