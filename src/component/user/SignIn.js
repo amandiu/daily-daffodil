@@ -13,9 +13,9 @@ export function Show() {
 }
 function name() {
     
-const email=document.getElementById('email').value;
-const x=document.getElementById('email1');
-const em='',j=0;
+var email=document.getElementById('email').value;
+var x=document.getElementById('email1');
+var em='',j=0;
 for(var i=0;i<email.length;i++){
     if(email[i]==='@'){
         j=i;
