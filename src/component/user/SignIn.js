@@ -2,7 +2,6 @@ import React from 'react'
 import './SignIn.css'
 import {AiOutlineMail} from 'react-icons/ai'
 import {RiLockPasswordLine} from 'react-icons/ri'
-import OutsideClickHandler from 'react-outside-click-handler';
 import {CgProfile} from 'react-icons/cg'
 
 export function Close(x){

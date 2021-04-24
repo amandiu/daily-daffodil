@@ -1,6 +1,7 @@
 import React from 'react'
 import './Theme.css'
 import OutsideClickHandler from 'react-outside-click-handler';
+import {Color} from './../../App'
 
 
 function Hide(){
@@ -9,14 +10,8 @@ function Hide(){
 export function ShowTheme(){
     document.getElementById('theme').style.display='initial';
 }
-function Color(params) {
-    const writeFileP = require("write-file-p");
- 
-    // Write a text file
-    writeFileP('output.txt', "Hello World", (err, data) => {
-        console.log(err || data);
-    });
-}
+
+
 function Theme(props){
     return(
         <div className='theme1' id='theme'>

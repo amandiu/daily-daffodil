@@ -17,7 +17,10 @@ import React, {useEffect, useState} from 'react'
 import Axios from 'axios'
 
 
-var themeColor='blue';
+var themeColor='red';
+export const Color=(p)=>{
+  themeColor=p;
+}
 
 function App() { 
 
